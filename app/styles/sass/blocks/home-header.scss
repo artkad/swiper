@@ -1,0 +1,74 @@
+body,
+html {
+  height: 100%;
+}
+
+.home-header {
+  background-color: $deep;
+  height: 100%;
+  color: #fff;
+}
+
+.top-line {
+  position: absolute;
+  width: 100%;
+  height: $size;
+  top: 0;
+  border-bottom: 1px solid rgba(#fff, $border-opacity);
+  z-index: 10;
+  background-color: $deep;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  flex: 0 0 200px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.5em;
+  &:hover,
+  &:focus {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.logo__img-wrapper {
+  width: $size;
+  height: $size;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-button__container {
+  flex: 0 0 200px;
+  text-align: right;
+  position: relative;
+  height: $size;
+}
+
+.menu-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: $size;
+  height: $size;
+  background-color: #3c3c3c;
+  background-image: url(../images/dist/bars-solid.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background 0.25s ease-out;
+  &:hover {
+    background-color: $accent;
+  }
+}
+
+.top-line__decoration {
+  flex: 1 0 0;
+  text-align: center;
+}
